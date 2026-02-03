@@ -2579,11 +2579,11 @@ input, select, textarea {
 
 /* Image */
 
-	.image {
-		border: 0;
-		display: inline-block;
-		position: relative;
-	}
+		.image {
+			border: 0;
+			display: inline-block;
+			position: relative;
+		}
 
 		.image img {
 			display: block;
@@ -2593,9 +2593,9 @@ input, select, textarea {
 			max-width: 40%;
 		}
 
-			.image.left img, .image.right img {
-				width: 100%;
-			}
+		.image.left img, .image.right img {
+			width: 100%;
+		}
 
 		.image.left {
 			float: left;
@@ -2611,24 +2611,23 @@ input, select, textarea {
 
 		.image.fit {
 			display: block;
-			margin: 2.5rem 0;
 			width: 100%;
+			height: 220px;
+			overflow: hidden;
+			border-radius: 12px;
+			margin: 2.5rem 0;
 		}
 
 		.image.fit img {
 			width: 100%;
-			height: 220px;
-			object-fit: contain;
-			background: #111;
+			height: 100%;
+			object-fit: cover;
+			display: block;
 		}
 
-			.image.fit:first-child {
-				margin-top: 0;
-			}
-
-			.image.fit img {
-				width: 100%;
-			}
+		.image.fit:first-child {
+			margin-top: 0;
+		}
 
 		.image.main {
 			display: block;
@@ -2636,13 +2635,13 @@ input, select, textarea {
 			width: 100%;
 		}
 
-			.image.main:first-child {
-				margin-top: 0;
-			}
+		.image.main:first-child {
+			margin-top: 0;
+		}
 
-			.image.main img {
-				width: 100%;
-			}
+		.image.main img {
+			width: 100%;
+		}
 
 		@media screen and (max-width: 736px) {
 
