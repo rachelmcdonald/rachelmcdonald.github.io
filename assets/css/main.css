@@ -3942,6 +3942,28 @@ input, select, textarea {
 
 		}
 
+		.posts {
+			display: flex;
+			flex-wrap: wrap;
+			gap: 2rem;
+		}
+
+		.posts article {
+		    display: flex;
+		    flex-direction: column;
+		    flex: 1 1 calc(50% - 2rem);
+		}
+
+		.posts article .image.fit {
+			height: 220px;
+			margin: 0 0 1.5rem 0;
+		}
+
+		.posts article .image.fit img {
+			height: 100%;
+			object-fit: cover;
+		}
+
 /* Footer */
 
 	#footer {
