@@ -2615,6 +2615,13 @@ input, select, textarea {
 			width: 100%;
 		}
 
+		.image.fit img {
+			width: 100%;
+			height: 220px;
+			object-fit: contain;
+			background: #111;
+		}
+
 			.image.fit:first-child {
 				margin-top: 0;
 			}
